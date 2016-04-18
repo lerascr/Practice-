@@ -1,0 +1,32 @@
+<html>
+<head>
+<script language="JavaScript">
+function viewResult(f) {
+answer = new Array(1, 1, 1, 1, 1, 1); // Массив ответов, 1-правильно, 0-неверно
+correct = 0; // Число правильных ответов
+numCheckbox = f.length - 1; // Число флажков 
+for(i=0; i<numCheckbox; i++) if(f.elements[i].checked == answer[i]) correct++;
+alert("Правильных ответов: " + correct + " из " + numCheckbox);
+}
+
+</script>
+</head>
+
+<BODY bgcolor="#FFFFE0";>
+ <form>
+<center><p><b> Сервисами Web 2.0. являются ?</b></p></center>
+<p>
+<input type=checkbox name=option1 value=a1> ВикиВики<br>
+<input type=checkbox name=option2 value=a2> Skype<br>
+<input type=checkbox name=option3 value=a3> Блоги<br>
+<input type=checkbox name=option4 value=a4> Сетевое анкетирование<br>
+<input type=checkbox name=option5 value=a5> Мэшапы<br>
+<input type=checkbox name=option6 value=a6> Социальные сети</p>
+<p><input type=button value="Результат" onClick="viewResult(this.form)"></p>
+
+</form> 
+<div class="field">
+ <center>   <button name="write" class="j-submit-report" onclick="window.location.href='zad.html'">Далее</button> </center>
+</div>
+</body>
+</html>

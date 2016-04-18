@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<TITLE>Тест на знание понятий</TITLE>
+<script type="text/javascript">
+
+function dataBase(test) {
+var counter=0;
+if (document.test.q1.value == "символьное имя") {counter++;}
+if (document.test.q2.value == "информационных") {counter++;}
+if (document.test.q3.value == "программное обеспечение") {counter++;}
+if (document.test.q4.value == "DNS") {counter++;}
+if (document.test.q5.value == "идентификатор") {counter++;}
+document.test.display.value = counter;
+}
+
+</script>
+
+</script>
+</HEAD>
+<BODY background="fon6.gif">
+<center>
+<form action="remove_it?subject=Answer on test questions" method="post" name="test">
+<H2>Тест на знание понятий</H2>
+<HR width=75%>
+<h3>Доменное имя — это ..., служащее для идентификации областей — единиц административной автономии в сети Интернет — в составе вышестоящей по иерархии такой области.  </h3><div align="left"><p style="margin-left: 100"><strong>
+<input name="q1" type="textarea" value=""><br>
+</strong></p>
+</div><hr>
+<h3>Интернет-это набор различных ... служб и сервисов, необходимых в работе современного офиса.</h3><div align="left"><p style="margin-left: 100"><strong>
+<input name="q2" type="textarea" value=""><br>
+</strong></p>
+</div><hr>
+<h3>Веб-обозреватель - это ... для просмотра веб-сайтов, то есть для запроса веб-страниц (преимущественно из Сети), их обработки, вывода и перехода от одной страницы к другой. </h3><div align="left"><p style="margin-left: 100"><strong>
+<input name="q3" type="textarea" value=""><br>
+</strong></p>
+</div><hr>
+<h3>Служебная запись (SRV-запись) — стандарт в ..., определяющий местоположение, то есть имя хоста и номер порта серверов для определенных служб. </h3><div align="left"><p style="margin-left: 100"><strong>
+<input name="q4" type="textarea" value=""><br>
+</strong></p>
+</div><hr>
+<h3>URI — унифицированный ... ресурса.</h3><div align="left"><p style="margin-left: 100"><strong>
+<input name="q5" type="textarea" value=""><br>
+</strong></p>
+</div><hr>
+<table>
+<tr>
+<td colspan="3"><div align="center"><p><strong><br><hr>Нажми на кнопку &nbsp; для завершения теста:</strong></td></div>
+</tr>
+<tr align="center">
+<td><strong><input name="check" onclick="dataBase(this.form)" type="button"
+value=" Подсчитать баллы "></strong></td>
+<td><strong><textarea cols="5" name="display" rows="1" wrap="VIRTUAL"></textarea></strong></td>
+<td><strong><input type="reset" value=" Сбросить ответы "></strong></td>
+</tr>
+</table> </form></center>
+<p align=center><strong>Подведем итоги. Если Вы набрали:<br>
+<ul>
+<li>0 баллов.Вам стоит очень внимательно изучить материал 
+<li> 1-2 балла. Вы запомнили хоть что-то, но это не очень хорошо
+<li>3-4 балла. Неплохо, но нужно быть внимательнее 
+<li>5 баллов. Отлично! Поздравляем Вас!</ul>
+<br>
+</strong></p>
+<hr align="center">
+</center> 
+
+<br>
+<div class="field">
+ <center>   <button name="write" class="j-submit-report" onclick="window.location.href='testg.html'">Вернуться назад</button> </center>
+
+ <center>   <button name="write" class="j-submit-report" onclick="window.location.href='open.html'">Вернуться на главную страницу</button> </center>
+</div>
+
+
+</BODY> 
+</HTML>
